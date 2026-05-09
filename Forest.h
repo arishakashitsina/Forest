@@ -30,7 +30,8 @@ class Forest
         static Forest* instance; // The forest - the one and the only.
         int init();
         int init(int na, int np, int _X, int _Y);
-
+        int grow();
+	int less();
         Animal** animals;
         int n_animals;
         Plant** plants;
