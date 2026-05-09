@@ -304,6 +304,9 @@ int ia = 0, ip = 0, _x, _y;
 
 int Forest::less()
 {
+    if (n_plants <= 1){
+	return 0;
+    }
     n_plants--;
     plants = new Plant*[n_plants];
     if (!plants) return 4;
