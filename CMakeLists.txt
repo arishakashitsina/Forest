@@ -21,6 +21,7 @@ add_executable(Forest
 	Sparrow.cpp
 	Sundew.cpp
 	main.cpp
+	Wolf.cpp
 )
 target_link_libraries(Forest PRIVATE sfml-window sfml-graphics)
 install(TARGETS Forest)
