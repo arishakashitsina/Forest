@@ -234,6 +234,7 @@ int Forest::init(int na, int np, int _X, int _Y)
 int Forest::grow()
 {
     n_plants++;
+    delete[] plants;
     plants = new Plant*[n_plants];
     if (!plants) return 4;
     for (int i=0; i<n_plants; i++)
@@ -314,6 +315,7 @@ int Forest::less()
 	return 0;
     }
     n_plants--;
+    delete[] plants;
     plants = new Plant*[n_plants];
     if (!plants) return 4;
     for (int i=0; i<n_plants; i++)
